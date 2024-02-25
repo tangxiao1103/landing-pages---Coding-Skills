@@ -1,0 +1,217 @@
+*{
+	padding:0;
+	margin: 0;
+}
+header {
+	background-color:#9e1d1d;
+	height: 80px;
+	width: 100%;
+	position:fixed;
+}
+h1 {
+	color:white;
+}
+header ul {
+	position: absolute;
+	right:5vw;
+	top:0;
+	line-height: 80px;
+}
+h1 {
+	position: absolute;
+	left: 120px;
+	top:0;
+	line-height: 80px;
+}
+header li {
+	display: inline;
+	margin-right: 4vw;
+}
+header a {
+	color:white;
+	text-decoration: none;
+}
+header a:hover {
+	text-decoration: underline;
+}
+.news {
+	background-color: antiquewhite;
+	color: white;
+	height: 95vh;
+	background-image: url("images/store 1.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.news h2 {
+	font-size: 60px;
+	margin-top: 60px;
+}
+.news p {
+	color:#e7ddd0;
+	font-size: 18px;
+	margin: 25px 0;
+}
+.news a {
+	color: white;
+	text-decoration: none;
+	border:1px solid #f5eadc;
+	padding: 10px 20px;
+}
+.slogan {
+	background-color: #9e1d1d;
+	color:white;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	line-height: 1.8em;
+}
+footer {
+	background-color: black;
+	color:#c2b2b2;
+	height:60px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:14px;
+}
+.shop {
+	display: flex;
+}
+.shop img {
+	width:50%
+}
+.shop video {
+    width: 50%;
+    height: auto; 
+}
+.info {
+	width:50%;
+	background-color:white;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content: center;
+}
+.info {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.info p {
+	text-align: 40px;
+	line-height: 2em;
+}
+.product {
+	display: flex;
+	background-color: #d39d6b;
+	justify-content: space-between;
+	align-items: center;
+	padding: 100px 180px 80px;
+}
+.product div {
+	width: 300px;
+	text-align: center;
+}
+.product img{
+	width: 100%;
+	border-radius: 10px;
+}
+.product h3 {
+	font-size: 20px;
+	margin: 20px 0;
+}
+.product p {
+	font-size: 14px;
+	line-height: 1.6em;
+}
+.newsletter {
+	background-color: #f5eadc;
+	color:black;
+	padding: 60px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.newsletter p {
+	margin-bottom: 20px;
+}
+.newsletter input,.newsletter button {
+	background-color: transparent;
+	color: black;
+	border: 1px solid black;
+	padding:10px;
+	border-radius: 5px;
+}
+.newsletter input {
+	width: 200px;
+	margin-right: 15px;
+}
+.newsletter button{
+	width: 80px;
+	cursor: pointer;
+}
+input::placeholder{
+	color: white;
+}
+input:focus{
+	outline: none;
+}
+.menu{
+	display: none;
+}
+/*xiangying CSS*/
+@media screen and (max-width:768px) {
+	header ul {
+			display: none;
+	}
+	header h1 {
+		left: 50%;
+		transform:translate X(-50%);
+	}
+	.news h2 {
+		font-size: 40px;
+	}
+	.menu {
+		display: block;
+		background-color: transparent;
+		color: white;
+		font-size: 35px;
+		position: absolute;
+		top:15px;
+		left:20px;
+		border: none;
+		cursor: pointer;
+	}
+	.shop{
+		flex-direction: column;
+	}
+	.shop img {
+		width: 100%;
+	}
+	.shop video {
+		width: 100%;
+  		height: auto;
+	}
+	.info{
+		width: 100%;
+		padding: 40px 0;
+	}
+	.info h2 {
+		font-size:20px;
+	}
+	.product {
+		flex-direction: column;
+		padding:60px 0;
+	}
+	.product div {
+		margin-bottom: 30px;
+	}
+}
+
+
